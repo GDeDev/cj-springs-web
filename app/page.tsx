@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <main className="">
       <HeroSection />
-      <Advantages />
+      {/* <Advantages /> */}
       <ResellersSection />
       <Stats />
       <SerialsSprings />
       <CustomsSprings />
       <AdvantagesSection />
-      <Location />
-      <Faqs />
+      {/* <Location />
+      <Faqs /> */}
       <Footer />
     </main >
   );
