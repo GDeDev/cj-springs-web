@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "./.shared/components/footer";
-import Header from "./.shared/components/header";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +22,6 @@ export default function RootLayout({
         href="https://res.cloudinary.com/dabrn7e05/image/upload/v1700014885/assets/CJ-180x180-_3_-min_clkbmp.webp"
       />
       <body className={inter.className}>
-        <Header />
         {children}
         <Footer />
       </body>
