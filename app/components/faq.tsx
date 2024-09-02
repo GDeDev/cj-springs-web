@@ -1,35 +1,21 @@
 'use client'
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 
-const Faqs = () => {
+interface Faq {
+    question: string;
+    answer: string;
+}
+
+interface FaqsProps {
+    faqs: Faq[];
+}
+
+const Faqs: React.FC<FaqsProps> = ({ faqs }) => {
     const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
     const toggleFAQ = (index: number) => {
         setOpenFAQ(openFAQ === index ? null : index);
     };
-
-    const faqs = [
-        {
-            question: '¿Cómo ser revendedor de CJ SPRINGS?',
-            answer: 'Para ser revendedor de CJ SPRINGS, debes contactar con nuestro equipo de ventas y completar el formulario de solicitud.'
-        },
-        {
-            question: '¿Cómo son los envíos?',
-            answer: 'Realizamos envíos a todo el país mediante nuestras empresas de logística asociadas. Los tiempos de entrega varían según la ubicación.'
-        },
-        {
-            question: '¿Qué medios de pago ofrecen?',
-            answer: 'Aceptamos tarjetas de crédito, débito, transferencias bancarias y pagos en efectivo mediante nuestra red de puntos de pago.'
-        },
-        {
-            question: 'Pregunta 4',
-            answer: 'Respuesta a la pregunta 4.'
-        },
-        {
-            question: 'Pregunta 5',
-            answer: 'Respuesta a la pregunta 5.'
-        }
-    ];
 
     return (
         <section className="flex flex-col items-center w-full bg-gray-100 dark:bg-gray-900 py-12">

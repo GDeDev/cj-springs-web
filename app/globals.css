@@ -44,3 +44,25 @@ body {
     text-wrap: balance;
   }
 }
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: #1a202c; 
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fa5d35; 
+    transition: width 0.3s ease;
+    border-radius: 100px;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+}
