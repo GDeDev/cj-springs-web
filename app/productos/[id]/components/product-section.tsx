@@ -1,4 +1,3 @@
-import Button from '../../../.shared/components/buttons';
 import Image from 'next/image';
 
 const ProductSection = () => {
@@ -30,12 +29,12 @@ const ProductSection = () => {
                     </div>
 
                     <div className="flex space-x-4">
-                        <Button href="productos/id" variant="primary">
+                        <button className="bg-primary-500 text-white py-2 px-4 rounded-full hover:bg-primary-400">
                             Ventajas
-                        </Button>
-                        <Button href="productos/id" variant="secondary">
+                        </button>
+                        <button className="border border-primary-500 text-primary-500 py-2 px-4 rounded-full hover:bg-primary-400 hover:text-white">
                             Preguntas frecuentes
-                        </Button>
+                        </button>
                     </div>
                 </div>
             </div>

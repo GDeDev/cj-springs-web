@@ -7,14 +7,8 @@ const FormPage = () => {
         <div className="relative flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
             {/* Imagen de fondo */}
             <div className="h-screen absolute inset-0 overflow-hidden">
-                <Image
-                    src="/hero.png"
-                    alt="Background Image"
-                    layout="fill"
-                    objectFit="cover"
-                    className="w-full h-1/2 object-cover"
-                />
-                <div className="absolute  h-1/2 inset-0 bg-black opacity-50"></div> {/* Overlay oscuro */}
+                <div className="absolute  h-1/2 inset-0 bg-primary-500 "></div> {/* Overlay oscuro */}
+                <div className="  h-1/2 inset-0 bg-black opacity-50"></div> {/* Overlay oscuro */}
             </div>
 
             {/* Contenedor del formulario */}

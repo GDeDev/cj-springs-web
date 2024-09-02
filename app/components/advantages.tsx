@@ -6,7 +6,7 @@ const Advantages = () => {
             <div className="container mx-auto">
                 <h2 className="text-primary-500 dark:text-primary-400 text-xl font-bold mb-2">25 AÑOS DE EXPERIENCIA</h2>
                 <h3 className="text-2xl font-bold mb-8">¿Por qué distribuir Cj?</h3>
-                <div className="flex flex-col md:flex-row justify-around items-center mb-8">
+                <div className="flex flex-col md:flex-row justify-around items-center mb-8 p-4  ">
                     <div className="flex flex-col items-center mb-4 md:mb-0 px-4">
                         <div className="bg-gray-200 dark:bg-gray-800 p-4 rounded-full mb-4">
                             <img src="/iconDefault.png" alt="Icon 1" className='w-4 h-4' />

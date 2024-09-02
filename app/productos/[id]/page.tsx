@@ -1,8 +1,9 @@
 import AdvantagesSection from "./components/advantages-section";
 import ProductSection from "./components/product-section";
-import Carousel from "./components/carrousel";
+import Carousel from "./components/card-section";
 import Faqs from "@/app/components/faq";
 import Location from "@/app/components/location";
+import CardSection from "./components/card-section";
 
 const faqsData = [
     {
@@ -32,7 +33,7 @@ export default function Home() {
         <main className="">
             <ProductSection />
             <AdvantagesSection />
-            <Carousel />
+            <CardSection />
             <Faqs faqs={faqsData} />
             <Location />
         </main >

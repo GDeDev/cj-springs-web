@@ -4,7 +4,7 @@ const AdvantagesSection = () => {
     return (
         <section className="bg-gray-100 dark:bg-gray-800 py-12">
             <div className="container mx-auto flex flex-col md:flex-row items-start justify-between px-6">
-                <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
                     <div>
                         <h3 className="text-xl font-bold mb-2 text-primary-500 dark:text-primary-400">Ventajas</h3>
                         <p className="text-gray-900 dark:text-gray-300">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
